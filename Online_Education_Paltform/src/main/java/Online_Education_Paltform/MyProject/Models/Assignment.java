@@ -22,9 +22,9 @@ public class Assignment {
     String assignment_name;
 
     @ManyToOne
-    private Course course;
+     Course course;
 
-    @OneToMany(mappedBy = "assignment")
-    @JsonIgnore
-    private List<Grade> grades;
+    @OneToMany//(mappedBy = "assignment")
+    //@JsonIgnore
+   List<Grade> grades;
 }

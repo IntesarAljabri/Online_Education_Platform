@@ -12,5 +12,15 @@ import javax.persistence.*;
 @Entity
 @Table(name = "Certificate")
 public class Certificate {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "certificate_id")
+    Integer certificate_id;
+
+    @Column(name = "certificate_date")
+    String certificate_date;
+
+  //  @OneToOne
+    //Enrollment enrollment;
 
 }
