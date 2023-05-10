@@ -25,19 +25,19 @@ public class Course {
 //    @JsonIgnore
 //    List<Enrollments> enrollments;
 
-    @ManyToMany(mappedBy = "courses")
-    @JsonIgnore
+    @ManyToMany//(mappedBy = "courses")
+    //@JsonIgnore
     private List<Instructor> instructors;
 
-    @OneToMany(mappedBy = "course")
-    @JsonIgnore
-    private List<Assignment> assignments;
+    @OneToMany//(mappedBy = "course")
+   // @JsonIgnore
+     List<Assignment> assignments;
 
-    @OneToMany(mappedBy = "course")
-    @JsonIgnore
-    private List<Quiz> quizzes;
+    @OneToMany//(mappedBy = "course")
+    //@JsonIgnore
+     List<Quiz> quizzes;
 
-    @OneToMany(mappedBy = "course")
-    @JsonIgnore
-    private List<Discussion> discussions;
+    @OneToMany//(mappedBy = "course")
+   // @JsonIgnore
+     List<Discussion> discussions;
 }

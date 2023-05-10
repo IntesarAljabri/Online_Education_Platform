@@ -15,10 +15,10 @@ public class Assignment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "assignment_id")
+   // @Column(name = "assignment_id")
     Integer assignment_id;
 
-    @Column(name = "assignment_name")
+   // @Column(name = "assignment_name")
     String assignment_name;
 
     @ManyToOne

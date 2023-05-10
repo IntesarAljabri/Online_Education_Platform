@@ -14,10 +14,10 @@ import javax.persistence.*;
 public class Certificate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "certificate_id")
+    //@Column(name = "certificate_id")
     Integer certificate_id;
 
-    @Column(name = "certificate_date")
+   // @Column(name = "certificate_date")
     String certificate_date;
 
   //  @OneToOne
