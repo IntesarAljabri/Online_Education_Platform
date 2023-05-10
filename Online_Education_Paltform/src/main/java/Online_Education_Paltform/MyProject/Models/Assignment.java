@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Data
-@Entity     
+@Entity
 @Table(name = "Assignment")
 public class Assignment {
 
