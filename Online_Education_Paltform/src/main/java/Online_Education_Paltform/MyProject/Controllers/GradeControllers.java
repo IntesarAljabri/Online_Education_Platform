@@ -11,9 +11,9 @@ public class GradeControllers {
     @Autowired
     GradeService gradeservice;
     @RequestMapping(value = "getAll", method = RequestMethod.GET)
-    public List<Grade> getAllGrades() {
+    public List<Grade> getAllGrade() {
 
-        return gradeservice.getAllGrades();
+        return gradeservice.getAllGrade();
     }
     @GetMapping(value = "getById")
     public Grade getGradeById(@RequestParam Integer id) {

@@ -11,9 +11,9 @@ public class StudentControllers {
     @Autowired
     StudentService studentservice;
     @RequestMapping(value = "getAll", method = RequestMethod.GET)
-    public List<Student> getAllStudents() {
+    public List<Student> getAllStudent() {
 
-        return studentservice.getAllStudents();
+        return studentservice.getAllStudent();
     }
     @GetMapping(value = "getById")
     public Student getStudentById(@RequestParam Integer id) {

@@ -12,9 +12,9 @@ public class QuizControllers {
     @Autowired
     QuizService quizservice;
     @RequestMapping(value = "getAll", method = RequestMethod.GET)
-    public List<Quiz> getAllQuizzes() {
+    public List<Quiz> getAllQuiz() {
 
-        return quizservice.getAllQuizzes();
+        return quizservice.getAllQuiz();
     }
     @GetMapping(value = "getById")
     public Quiz getQuizById(@RequestParam Integer id) {

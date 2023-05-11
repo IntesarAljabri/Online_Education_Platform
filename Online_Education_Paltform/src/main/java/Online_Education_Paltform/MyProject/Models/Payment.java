@@ -11,4 +11,18 @@ import javax.persistence.*;
 @Entity
 @Table(name = "Payment")
 public class Payment {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "payment_id")
+    Integer payment_id;
+
+    @Column(name = "payment_amount")
+    Double payment_amount;
+
+    @ManyToOne
+    private Student student;
+
+    @ManyToOne
+    private Course course;
+    private String paymentDate;
 }

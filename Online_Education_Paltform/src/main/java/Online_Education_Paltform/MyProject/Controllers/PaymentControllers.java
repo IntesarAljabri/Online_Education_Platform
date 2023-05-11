@@ -16,7 +16,7 @@ public class PaymentControllers {
     @RequestMapping(value = "getAll", method = RequestMethod.GET)
     public List<Payment> getAllPayments() {
 
-        return paymentservice.getAllPayments();
+        return paymentservice.getAllPayment();
     }
     @GetMapping(value = "getById")
     public Payment getPaymentById(@RequestParam Integer id) {

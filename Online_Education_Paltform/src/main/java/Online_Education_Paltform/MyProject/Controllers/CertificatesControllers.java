@@ -14,7 +14,7 @@ public class CertificatesControllers {
     @Autowired
     CertificateService certificateservice;
     @RequestMapping(value = "getAll", method = RequestMethod.GET)
-    public List<Certificate> getAllCertificates() {
+    public List<Certificate> getAllCertificate() {
 
         return certificateservice.getAllCertificate();
     }

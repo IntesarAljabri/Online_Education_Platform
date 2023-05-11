@@ -18,7 +18,7 @@ public class Course {
     @Column(name = "course_id")
     Integer course_id;
 
-    @Column(name = "course_name")
+    //@Column(name = "course_name")
     String course_name;
 
 //    @OneToMany(mappedBy = "course")

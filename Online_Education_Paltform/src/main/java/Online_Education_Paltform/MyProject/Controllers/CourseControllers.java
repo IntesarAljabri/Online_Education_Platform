@@ -16,7 +16,7 @@ public class CourseControllers {
     @RequestMapping(value = "getAll", method = RequestMethod.GET)
     public List<Course> getAllCourses() {
 
-        return courseservice.getAllCourses();
+        return courseservice.getAllCourse();
     }
     @GetMapping(value = "getById")
     public Course getCourseById(@RequestParam Integer id) {

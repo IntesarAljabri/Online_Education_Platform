@@ -11,15 +11,15 @@ import java.util.List;
 public class InstructorControllers {
 
     @Autowired
-    InstructorService instructor_service;
+    InstructorService instructorService;
     @RequestMapping(value = "getAll", method = RequestMethod.GET)
-    public List<Instructor> getAllInstructors() {
+    public List<Instructor> getAllInstructor() {
 
-        return instructor_service.getAllInstructors();
+        return instructorService.getAllInstructor();
     }
     @GetMapping(value = "getById")
     public Instructor getInstructorById(@RequestParam Integer id) {
 
-        return instructorservice.getInstructorById(id);
+        return instructorService.getInstructorById(id);
     }
 }

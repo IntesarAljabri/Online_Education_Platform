@@ -20,7 +20,7 @@ public class Certificate {
    // @Column(name = "certificate_date")
     String certificate_date;
 
-  //  @OneToOne
-    //Enrollment enrollment;
+    @OneToOne
+    Enrollment enrollment;
 
 }

@@ -11,9 +11,9 @@ public class DiscussionControllers {
     @Autowired
     DiscussionService discussionservice;
     @RequestMapping(value = "getAll", method = RequestMethod.GET)
-    public List<Discussion> getAllDiscussions() {
+    public List<Discussion> getAllDiscussion() {
 
-        return discussionservice.getAllDiscussions();
+        return discussionservice.getAllDiscussion();
     }
     @GetMapping(value = "getById")
     public Discussion getDiscussionById(@RequestParam Integer id) {

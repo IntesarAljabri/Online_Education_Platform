@@ -1,4 +1,5 @@
 package Online_Education_Paltform.MyProject.Models;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,4 +12,21 @@ import javax.persistence.*;
 @Entity
 @Table(name = "Instructor")
 public class Instructor {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "instructor_id")
+    Integer instructor_id;
+
+    @Column(name = "instructor_name")
+    String instructor_name;
+
+    @Column(name = "instructor_major")
+    String instructor_major;
+
+    @Column(name = "instructor_phone")
+    Integer instructor_phone;
+
+    @ManyToMany
+    @JsonIgnore
+    private List<Course> courses;
 }
